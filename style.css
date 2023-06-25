@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    color: #fff;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 50%;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.container h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.audio-lists {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.audio-lists li {
+    margin: 5px 0;
+}
+
+.audio-lists li a {
+    color: #fff;
+    text-decoration: none;
+}
+.audio-lists li a.active,
+.audio-lists li:hover a {
+    text-decoration: underline;
+}
+
+.controls {
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctrl-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.ctrl-btn:last-of-type {
+    color: red;
+}
+
+.controls > * {
+    margin-right: 5px;
+}
+
+.progress-container {
+    width: 50%;
+    height: 5px;
+    background-color: #bbb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progress-container .progress {
+    width: 0%;
+    height: inherit;
+    background-color: #fff;
+    border-radius: inherit;
+}
+
+.volume-progress {
+    width: 15%;
+    cursor: pointer;
+}

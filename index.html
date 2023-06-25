@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Audio Player</h2>
+
+        <audio src="" id="audioScreen" class="audio-screen" ></audio>
+
+        <ul class="audio-lists"></ul>
+
+        <div class="controls">
+
+            <button type="button" id="prev" class="ctrl-btn"><i class="fas fa-backward"></i></button>
+            <button type="button" id="play" class="ctrl-btn"><i class="fas fa-play"></i></button>
+            <button type="button" id="next" class="ctrl-btn"><i class="fas fa-forward"></i></button>
+            <button type="button" id="stop" class="ctrl-btn"><i class="fas fa-stop"></i></button>
+
+            <div id="progressContainer" class="progress-container">
+                <div id="progress" class="progress"></div>
+            </div>
+
+            <input type="range" name="volumeprogress" id="volumeProgress" class="volume-progress" min="0" max="100" value="100" />
+
+            <span id="displayTime" class="display-time"></span>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js" type="text/javascript"></script>
+    
+</body>
+</html>
